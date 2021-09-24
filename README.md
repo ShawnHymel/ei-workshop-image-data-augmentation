@@ -1,6 +1,23 @@
 # Workshop: Image Data Augmentation
 
-Project: https://studio.edgeimpulse.com/public/36514/latest
+Welcome to the Image Data Augmentation workshop! Feel free to work ahead following the directions in this readme document.
+
+## Prerequisites
+
+Please create accounts (if you do not already have them) on the following sites:
+
+* [Edge Impulse](https://www.edgeimpulse.com/) (to train machine learning models)
+* [Google Gmail](https://gmail.com/) (for use with Google Colab)
+
+## 1: Examine Old Model
+
+Navigate to the following project: [https://studio.edgeimpulse.com/public/36514/latest](https://studio.edgeimpulse.com/public/36514/latest)
+
+Take a look at the training and test datasets in *Data acquisition*. How many samples are there per class? Do you think this is enough to create a robust model?
+
+Go to *Impulse design > NN Classifier*. Take a look at the model: it is the default convolutional neural network (CNN) used by Edge Impulse for image classification.
+
+
 
 ## License
 
