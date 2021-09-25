@@ -129,7 +129,7 @@ You should be automatically taken to the *Generate features* page. Click the **G
 
 Navigate to *NN Classifier*. Change the *Number of training cycles* to **100**. Click **Start training**. Wait a few minutes while training completes. Take a look at the output confusion matrix: how well did this new model perform versus the old model (even though the layers should be the exact same)?
 
-![View training results](https://raw.githubusercontent.com/ShawnHymel/ei-workshop-image-data-augmentation/master/Images/screen-14.png)
+![View training results](https://raw.githubusercontent.com/ShawnHymel/ei-workshop-image-data-augmentation/master/Images/screen-15.png)
 
 Go to *Model testing* and click **Classify all**. How well does the model perform on the test set? Why do you think it performed better or worse than the original model?
 
