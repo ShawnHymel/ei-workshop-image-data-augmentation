@@ -1,6 +1,6 @@
 # Workshop: Image Data Augmentation
 
-Welcome to the Image Data Augmentation workshop! Feel free to work ahead following the directions in this readme document.
+Welcome to the Image Data Augmentation workshop! Feel free to work ahead following the directions in this README.
 
 ## Prerequisites
 
@@ -83,7 +83,7 @@ The *Settings* cell should not need to be modified. It points to this repository
 
 Run each cell, paying close attention to the *Transform Functions* section. This section contains a number of functions designed to create copies of an input image that are modified in some way. Each function is documented with examples on how to use it, as you will need to call the function for challenge 2.
 
-***Challenge 1***: Right now, only the `create_flipped(img_array)` function is called, which means we're just augmenting our data with flipped copies of each image. Call the other transformation functions (e.g. `create_rotated()`) to add more augmented images to your dataset. Look for the `# >>>ENTER YOUR CODE HERE<<<` comment in the *Do Transforms* section to see where to call these functions. The line above it (`img_tfs.append(create_flipped(img_array))`) should give you an idea of how to call these functions, as `img_tfs` is the collection of images.
+***Challenge 1***: Right now, only the `create_flipped(img_array)` function is called, which means we're just augmenting our data with flipped copies of each image. Call the other transformation functions (e.g. `create_rotated()`) to add more augmented images to your dataset. Look for the `# >>>ENTER YOUR CODE HERE<<<` comment in the *Do Transforms* section to see where to call these functions. The line above it, `img_tfs.append(create_flipped(img_array))`, should give you an idea of how to call these functions, as `img_tfs` is the collection of images.
 
 ***Challenge 2 (Bonus)***: Implement the `create_noisy()` function (in the *Add Noise* section) that returns a list of image arrays that are copies of the original input image with random noise added. Look at the other transformation functions to see how to accept an image array parameter and return a list of image arrays. You also might find the [skimage.util.random_noise()](https://scikit-image.org/docs/dev/api/skimage.util.html#random-noise) function useful.
 
@@ -113,7 +113,7 @@ Repeat this process for the other categories. Don't forget to change the label t
 * led
 * resistor
 
-Go to *Impulse design*. Change the Image data width to **28** and height to **28**. Add an *Image* block as your processing block and a *Classification (Keras)* block for your learning block.
+Go to *Impulse design*. Change the *Image data* width to **28** and height to **28**. Add an *Image* block as your processing block and a *Classification (Keras)* block for your learning block.
 
 ![Create impulse](https://raw.githubusercontent.com/ShawnHymel/ei-workshop-image-data-augmentation/master/Images/screen-12.png)
 
@@ -123,17 +123,23 @@ Go to the *Image* page under *Impulse design*. Change the *Color depth* to **Gra
 
 ![Set features for images](https://raw.githubusercontent.com/ShawnHymel/ei-workshop-image-data-augmentation/master/Images/screen-13.png)
 
-You should be automatically taken to the *Generate features* page. Click the **Generate features* button and wait while the images are converted to grayscale and resized to 28x28.
+You should be automatically taken to the *Generate features* page. Click the **Generate features** button and wait while the images are converted to grayscale and resized to 28x28.
 
 ![Set features for images](https://raw.githubusercontent.com/ShawnHymel/ei-workshop-image-data-augmentation/master/Images/screen-14.png)
 
-Navigate to *NN Classifier*. Change the *Number of training cycles* to **100**. Click **Start training**. Wait a few minutes while training completes. Take a look at the output confusion matrix: how well did this new model compare versus the old model (even though the layers should be the exact same)?
+Navigate to *NN Classifier*. Change the *Number of training cycles* to **100**. Click **Start training**. Wait a few minutes while training completes. Take a look at the output confusion matrix: how well did this new model perform versus the old model (even though the layers should be the exact same)?
 
 ![View training results](https://raw.githubusercontent.com/ShawnHymel/ei-workshop-image-data-augmentation/master/Images/screen-14.png)
 
-Go to *Model testing* and click **Classify all**. How well does the model perform on the test set? If better, why do you think it performed better?
+Go to *Model testing* and click **Classify all**. How well does the model perform on the test set? Why do you think it performed better or worse than the original model?
+
+Feel free to generate saliency maps and class activation maps using an image from this new test set. How is the new model making decisions, and how does that differ from the way the old model made decisions?
 
 ## License
+
+This README document is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+---
 
 Unless otherwise noted, all code in this repository is licensed as follows:
 
